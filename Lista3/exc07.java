@@ -1,0 +1,27 @@
+package lista03_lacos;
+
+import java.util.Scanner;
+
+public class exc07 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int maior = Integer.MIN_VALUE;
+		
+		
+		for(int i = 1; i <= 5; i++) {
+			System.out.print("digite o "+ i + "° número: ");
+			int numero = sc.nextInt();
+			
+			if (numero > maior){
+				maior = numero;
+			}
+		}
+
+		System.out.println("Maior número: "+maior);
+			
+		}
+	}
+
+
